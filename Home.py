@@ -59,7 +59,7 @@ def forms():
 
         predict = model.predict(new_df[new_df.columns])
 
-        if predict[0] == 1:
+        if predict == 1:
             st.balloons()
             st.success("You are Expected to maintain attendance")
         
